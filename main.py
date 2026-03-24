@@ -20,21 +20,22 @@ def acceleration(time):
     return amplitude * (angular_velocity ** 2) * np.cos(phi + angular_velocity * time)
 
 # Setting the numpy arrays
-time_array = np.arange(total_time + 1)
+time_array = np.linspace(0, total_time, num=1000, dtype=float)
 displacement_array = np.array(displacement(time_array), dtype=float)
 velocity_array = np.array(velocity(time_array), dtype=float)
 acceleration_array = np.array(acceleration(time_array), dtype=float)
 
+# Important information
 max_speed = amplitude * angular_velocity
 max_acc = amplitude * (angular_velocity ** 2)
 time_period = (2 * np.pi) / angular_velocity
 total_mechanical_energy = (mass * (angular_velocity ** 2) * (amplitude ** 2)) * 0.5
 
+# Print some important values
 print(f"Maximum speed: \t{max_speed}\n")
 print(f"Maximum acceleration: \t{max_acc}\n")
 print(f"Time period: \t{time_period:.2f}\n")
 print(f"Total mechanical energy: \t{total_mechanical_energy:.2f}\n\n")
-
 
 # Setting up matplotlib for plotting the graph
 fig, time_velocity = plt.subplots()
