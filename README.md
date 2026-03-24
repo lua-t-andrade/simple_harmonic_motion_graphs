@@ -9,6 +9,8 @@ This was an exercise for personal study reasons in my Physics class.
 ![Velocity](https://github.com/lua-t-andrade/simple_harmonic_motion_graphs/blob/master/v.png?raw=true)
 ![Acceleration](https://github.com/lua-t-andrade/simple_harmonic_motion_graphs/blob/master/a.png?raw=true)
 ![Displacement](https://github.com/lua-t-andrade/simple_harmonic_motion_graphs/blob/master/d.png?raw=true)
+![Kinetic](https://github.com/lua-t-andrade/simple_harmonic_motion_graphs/blob/master/k.png?raw=true)
+![Potencial](https://github.com/lua-t-andrade/simple_harmonic_motion_graphs/blob/master/p.png?raw=true)
 
 ## Terminal output
 ```

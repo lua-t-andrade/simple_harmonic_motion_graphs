@@ -19,11 +19,20 @@ def velocity(time):
 def acceleration(time):
     return amplitude * (angular_velocity ** 2) * np.cos(phi + angular_velocity * time)
 
+# Mechanical energy functions
+def kinetic(time):
+    return 0.5 * (velocity(time) ** 2) * mass
+
+def potencial(time):
+    return 0.5 * (displacement(time) ** 2) * K
+
 # Setting the numpy arrays
 time_array = np.linspace(0, total_time, num=1000, dtype=float)
 displacement_array = np.array(displacement(time_array), dtype=float)
 velocity_array = np.array(velocity(time_array), dtype=float)
 acceleration_array = np.array(acceleration(time_array), dtype=float)
+kinetic_energy_array = np.array(kinetic(time_array), dtype=float)
+potencial_energy_array = np.array(potencial(time_array), dtype=float)
 
 # Important information
 max_speed = amplitude * angular_velocity
@@ -43,10 +52,14 @@ print(f"Frequency: \t{frequency:.2f} Hertz\n")
 fig, time_velocity = plt.subplots()
 fig2, time_acceleration = plt.subplots()
 fig3, time_displacement = plt.subplots()
+fig4, time_kinetic = plt.subplots()
+fig5, time_potencial = plt.subplots()
 
 time_velocity.plot(time_array, velocity_array)
 time_acceleration.plot(time_array, acceleration_array)
 time_displacement.plot(time_array, displacement_array)
+time_kinetic.plot(time_array, kinetic_energy_array)
+time_potencial.plot(time_array, potencial_energy_array)
 
 time_velocity.set(xlabel='time (s)', ylabel='velocity (m/s)',
        title='Velocity graph')
@@ -60,6 +73,16 @@ time_displacement.set(xlabel='time (s)', ylabel='displacement (m)',
        title='Displacement graph')
 time_displacement.grid()
 
+time_kinetic.set(xlabel='time (s)', ylabel='kinetic energy (J)',
+       title='Kinetic energy graph')
+time_kinetic.grid()
+
+time_potencial.set(xlabel='time (s)', ylabel='potencial energy (J)',
+       title='Potencial energy graph')
+time_potencial.grid()
+
 fig.savefig("v.png")
 fig2.savefig("a.png")
-fig3.savefig("d.png")    
+fig3.savefig("d.png")
+fig4.savefig("k.png")
+fig5.savefig("p.png")
