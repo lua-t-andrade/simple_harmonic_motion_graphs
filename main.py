@@ -29,12 +29,13 @@ acceleration_array = np.array(acceleration(time_array), dtype=float)
 max_speed = amplitude * angular_velocity
 max_acc = amplitude * (angular_velocity ** 2)
 time_period = (2 * np.pi) / angular_velocity
+frequency = 1 / time_period
 total_mechanical_energy = (mass * (angular_velocity ** 2) * (amplitude ** 2)) * 0.5
 
 # Print some important values
 print(f"Maximum speed: \t{max_speed} m/s\n")
 print(f"Maximum acceleration: \t{max_acc} m/s^2\n")
-print(f"Time period: \t{time_period:.2f} s\n")
+print(f"Time period: \t{frequency:.2f} s\n")
 print(f"Total mechanical energy: \t{total_mechanical_energy:.2f} Joules\n\n")
 print(f"Frequency: \t{angular_velocity:.2f} Hertz\n")
 
