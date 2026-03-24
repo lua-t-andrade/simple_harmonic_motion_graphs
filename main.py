@@ -32,10 +32,11 @@ time_period = (2 * np.pi) / angular_velocity
 total_mechanical_energy = (mass * (angular_velocity ** 2) * (amplitude ** 2)) * 0.5
 
 # Print some important values
-print(f"Maximum speed: \t{max_speed}\n")
-print(f"Maximum acceleration: \t{max_acc}\n")
-print(f"Time period: \t{time_period:.2f}\n")
-print(f"Total mechanical energy: \t{total_mechanical_energy:.2f}\n\n")
+print(f"Maximum speed: \t{max_speed} m/s\n")
+print(f"Maximum acceleration: \t{max_acc} m/s^2\n")
+print(f"Time period: \t{time_period:.2f} s\n")
+print(f"Total mechanical energy: \t{total_mechanical_energy:.2f} Joules\n\n")
+print(f"Frequency: \t{angular_velocity:.2f} Hertz\n")
 
 # Setting up matplotlib for plotting the graph
 fig, time_velocity = plt.subplots()

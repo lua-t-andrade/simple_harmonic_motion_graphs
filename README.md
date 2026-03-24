@@ -12,11 +12,14 @@ This was an exercise for personal study reasons in my Physics class.
 
 ## Terminal output
 ```
-    Maximum speed: 	2.5
+Maximum speed: 	2.5 m/s
 
-    Maximum acceleration: 	1.25
+Maximum acceleration: 	1.25 m/s^2
 
-    Time period: 	12.57
+Time period: 	12.57 s
 
-    Total mechanical energy: 	312.50
+Total mechanical energy: 	312.50 Joules
+
+Frequency: 	0.50 Hertz
+
 ```
