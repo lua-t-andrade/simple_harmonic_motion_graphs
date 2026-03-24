@@ -20,6 +20,6 @@ Time period: 	12.57 s
 
 Total mechanical energy: 	312.50 Joules
 
-Frequency: 	0.50 Hertz
+Frequency: 	0.08 Hertz
 
 ```

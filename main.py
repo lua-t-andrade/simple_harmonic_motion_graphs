@@ -37,7 +37,7 @@ print(f"Maximum speed: \t{max_speed} m/s\n")
 print(f"Maximum acceleration: \t{max_acc} m/s^2\n")
 print(f"Time period: \t{frequency:.2f} s\n")
 print(f"Total mechanical energy: \t{total_mechanical_energy:.2f} Joules\n\n")
-print(f"Frequency: \t{angular_velocity:.2f} Hertz\n")
+print(f"Frequency: \t{frequency:.2f} Hertz\n")
 
 # Setting up matplotlib for plotting the graph
 fig, time_velocity = plt.subplots()
